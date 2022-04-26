@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD90FA8E2817074F00382AEF /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90FA8C2817074F00382AEF /* PlaySoundsViewController.swift */; };
+		BD90FA8F2817074F00382AEF /* PlaySoundsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD90FA8D2817074F00382AEF /* PlaySoundsViewController.xib */; };
+		BD90FA932817CA3700382AEF /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90FA922817CA3700382AEF /* PlaySoundsViewController+Audio.swift */; };
 		BDCDA7872816A92800275E16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCDA7862816A92800275E16 /* AppDelegate.swift */; };
 		BDCDA7892816A92800275E16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCDA7882816A92800275E16 /* SceneDelegate.swift */; };
-		BDCDA78B2816A92800275E16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCDA78A2816A92800275E16 /* ViewController.swift */; };
+		BDCDA78B2816A92800275E16 /* RecordSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDCDA78A2816A92800275E16 /* RecordSoundsViewController.swift */; };
 		BDCDA78E2816A92800275E16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCDA78C2816A92800275E16 /* Main.storyboard */; };
 		BDCDA7902816A92900275E16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDCDA78F2816A92900275E16 /* Assets.xcassets */; };
 		BDCDA7932816A92900275E16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDCDA7912816A92900275E16 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD90FA8C2817074F00382AEF /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		BD90FA8D2817074F00382AEF /* PlaySoundsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaySoundsViewController.xib; sourceTree = "<group>"; };
+		BD90FA922817CA3700382AEF /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 		BDCDA7832816A92800275E16 /* PitchPerfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PitchPerfect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDCDA7862816A92800275E16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDCDA7882816A92800275E16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BDCDA78A2816A92800275E16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDCDA78A2816A92800275E16 /* RecordSoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundsViewController.swift; sourceTree = "<group>"; };
 		BDCDA78D2816A92800275E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDCDA78F2816A92900275E16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDCDA7922816A92900275E16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +64,14 @@
 			children = (
 				BDCDA7862816A92800275E16 /* AppDelegate.swift */,
 				BDCDA7882816A92800275E16 /* SceneDelegate.swift */,
-				BDCDA78A2816A92800275E16 /* ViewController.swift */,
+				BDCDA78A2816A92800275E16 /* RecordSoundsViewController.swift */,
 				BDCDA78C2816A92800275E16 /* Main.storyboard */,
 				BDCDA78F2816A92900275E16 /* Assets.xcassets */,
 				BDCDA7912816A92900275E16 /* LaunchScreen.storyboard */,
 				BDCDA7942816A92900275E16 /* Info.plist */,
+				BD90FA8C2817074F00382AEF /* PlaySoundsViewController.swift */,
+				BD90FA8D2817074F00382AEF /* PlaySoundsViewController.xib */,
+				BD90FA922817CA3700382AEF /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			files = (
 				BDCDA7932816A92900275E16 /* LaunchScreen.storyboard in Resources */,
 				BDCDA7902816A92900275E16 /* Assets.xcassets in Resources */,
+				BD90FA8F2817074F00382AEF /* PlaySoundsViewController.xib in Resources */,
 				BDCDA78E2816A92800275E16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDCDA78B2816A92800275E16 /* ViewController.swift in Sources */,
+				BD90FA932817CA3700382AEF /* PlaySoundsViewController+Audio.swift in Sources */,
+				BDCDA78B2816A92800275E16 /* RecordSoundsViewController.swift in Sources */,
 				BDCDA7872816A92800275E16 /* AppDelegate.swift in Sources */,
+				BD90FA8E2817074F00382AEF /* PlaySoundsViewController.swift in Sources */,
 				BDCDA7892816A92800275E16 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +299,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9V92DJEN9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,7 +317,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,11 +328,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N9V92DJEN9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,7 +346,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
