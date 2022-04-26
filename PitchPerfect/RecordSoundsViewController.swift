@@ -16,9 +16,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var stopRecodingButton: UIButton!
     
-    enum ScreenStatus: Int {
-        case ready=0, recording
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +23,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        configUI(when: ScreenStatus.ready)
+        configUI(isRecoding: false)
     }
 
     // MARK: - Audio recording function
     @IBAction func recordAudio(_ sender: Any) {
-        configUI(when: ScreenStatus.recording)
+        configUI(isRecoding: true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
@@ -50,7 +47,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     // MARK: Stop audio recording function
     @IBAction func stopRecording(_ sender: Any) {
-        configUI(when: ScreenStatus.ready)
+        configUI(isRecoding: false)
         
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
@@ -75,16 +72,9 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     // MARK: UI Configuration
-    func configUI(when: ScreenStatus) {
-        switch(when) {
-        case .ready:
-            recordButton.isEnabled = true
-            stopRecodingButton.isEnabled = false
-            recordingLabel.text = "Tap to record"
-        case .recording:
-            recordButton.isEnabled = false
-            stopRecodingButton.isEnabled = true
-            recordingLabel.text = "Recoding in progress..."
-        }
+    func configUI(isRecoding: Bool) {
+        recordButton.isEnabled = !isRecoding
+        stopRecodingButton.isEnabled = isRecoding
+        recordingLabel.text = isRecoding ? "Recording in progres" : "Tap to record"
     }
 }
