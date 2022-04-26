@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYc-H9-aZX">
-                                <rect key="frame" x="156.5" y="564.5" width="101" height="21"/>
+                                <rect key="frame" x="156.5" y="542" width="101" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP8-js-lTG">
-                                <rect key="frame" x="175" y="593.5" width="64" height="64"/>
+                                <rect key="frame" x="175" y="571" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="T2c-3r-Ttn"/>
                                     <constraint firstAttribute="height" constant="64" id="mL7-hR-7mw"/>
@@ -34,8 +34,8 @@
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5m-kn-xbK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAe-MH-Miz">
-                                <rect key="frame" x="129.5" y="393" width="155" height="155"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAe-MH-Miz">
+                                <rect key="frame" x="152" y="393" width="111" height="111"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="RecordButton"/>
                                 <connections>
@@ -48,10 +48,10 @@
                         <constraints>
                             <constraint firstItem="FAe-MH-Miz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2qc-tC-WLA"/>
                             <constraint firstItem="iYc-H9-aZX" firstAttribute="centerX" secondItem="FAe-MH-Miz" secondAttribute="centerX" id="A5V-SZ-Wzg"/>
-                            <constraint firstItem="iYc-H9-aZX" firstAttribute="top" secondItem="FAe-MH-Miz" secondAttribute="bottom" constant="16.5" id="GrB-i1-9gZ"/>
+                            <constraint firstItem="iYc-H9-aZX" firstAttribute="top" secondItem="FAe-MH-Miz" secondAttribute="bottom" constant="16" id="GrB-i1-9gZ"/>
                             <constraint firstItem="wP8-js-lTG" firstAttribute="top" secondItem="iYc-H9-aZX" secondAttribute="bottom" constant="8" id="PH4-PE-mPN"/>
                             <constraint firstItem="wP8-js-lTG" firstAttribute="centerX" secondItem="iYc-H9-aZX" secondAttribute="centerX" id="gVp-V7-QjB"/>
-                            <constraint firstItem="FAe-MH-Miz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-4.5" id="tFl-EP-bZs"/>
+                            <constraint firstItem="FAe-MH-Miz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-26.5" id="tFl-EP-bZs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lpb-Zv-br0"/>
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="100"/>
+            <point key="canvasLocation" x="813.04347826086962" y="99.776785714285708"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="qOo-Y4-UtU">
